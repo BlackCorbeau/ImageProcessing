@@ -6,6 +6,7 @@ pkgs.mkShell {
     python3Packages.numpy
     python3Packages.opencv4
     python3Packages.matplotlib
+    python3Packages.scipy
   ];
 
   shellHook = ''
