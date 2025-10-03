@@ -97,7 +97,9 @@ jobs:
           python -c "import numpy; print(f'numpy version: {numpy.__version__}')"
           python -c "import cv2; print(f'opencv version: {cv2.__version__}')"
           python -c "import matplotlib; print(f'matplotlib version: {matplotlib.__version__}')"
-    
+
       - name: Execute Lab script
-        run: python lab3/lab3.py
+        run: |
+          cd lab3/
+          python lab3.py
 
