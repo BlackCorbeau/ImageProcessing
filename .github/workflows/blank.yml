@@ -9,7 +9,7 @@ on:
 
 jobs:
   runLab1:
-    runs-on: ubuntu-latest
+    runs-on: alpine-latest
     
     steps:
     - name: Checkout code
@@ -37,4 +37,4 @@ jobs:
         python -c "import matplotlib; print(f'matplotlib version: {matplotlib.__version__}')"
     
     - name: Execute Lab1 script
-      run: python lab1/lab1.py  # Замените на имя вашего файла с кодом Lab1
+      run: python lab1/lab1.py
